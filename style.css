@@ -38,4 +38,43 @@ img, svg, iframe {
 }
 #candy_input_container > button:active {
   scale: 95%;
+}
+
+#candy_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
+  margin-top: 50px;
+}
+#candy_container > div {
+  display: grid;
+  height: 300px;
+  width: 250px;
+  row-gap: 15px;
+  text-align: center;
+}
+#candy_container > div > img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+#candy_container > div > button {
+  width: 70px;
+  height: 25px;
+  justify-self: center;
+  margin-top: 15px;
+  border: none;
+  background-color: rgb(219, 87, 87);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#candy_container > div > button:hover {
+  background-color: rgb(210, 106, 106);
+}
+#candy_container > div > button:active {
+  scale: 95%;
 }/*# sourceMappingURL=style.css.map */
